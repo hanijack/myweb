@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 3.5rem;
+    background-color: aqua;
+    z-index: 100;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    max-width: 950 px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 1rem;
+}

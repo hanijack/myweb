@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 , h2 , h3 {
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    max-width: 950 px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+nav{
+    display: flex;
+}
+
+@media screen and (max-width:650px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+/* services  body must be background of #eff0f4*/
+.container-services{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 40px 60px;
+}
+
+.container .drops{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+}
+
+.container .drops:nth-child(1){  
+    border-radius: 56% 44% 60% 40% / 46% 30% 70% 54%  ; 
+}
+.container .drops:nth-child(2){  
+    border-radius: 32% 68% 29% 71% / 60% 53% 47% 40% ; 
+}
+.container .drops:nth-child(3){ 
+    border-radius:72% 28% 49% 51% / 26% 66% 34% 74%  ; 
+}
+
+
+.container .drops:hover{
+    border-radius: 50%;
+}
+.container .drops::before{
+    content: "";
+    position: absolute;
+    top:35px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+    background-color: #eff0f4;
+    background-color:  #282D35;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05),
+    15px 10px 15px rgba(0,0,0,0.025);
+}
+.container .drops::after{
+    content: "";
+    position: absolute;
+    top:75px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    background-color: #eff0f4;
+    background-color:  #282D35;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05),
+    15px 10px 15px rgba(0,0,0,0.025);
+}
+.container .drops .content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 12px;
+    height: 80%;
+}
+.content h2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #eff0f4;
+    background-color:  #282D35;
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255,255,255,1),
+    15px 15px 10px rgba(0,0,0,0.05),
+    15px 10px 15px rgba(0,0,0,0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
