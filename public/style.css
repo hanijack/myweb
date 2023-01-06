@@ -5,9 +5,51 @@
 h1 , h2 , h3 {
     margin: 0;
 }
+.img-handler{
+    display: flex;
+    width: 50%;
+    max-height: 500px;
+    animation: intro 1.5s 1;
+
+}
+.intro-data{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    animation: data 1.5s 1;
+}
 img{
     width: 100%;
+    border-radius: 2rem;
+    max-height: 100%;
+    object-fit: scale-down;
 }
+
+
+
+@keyframes intro {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes data {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
 
 .container{
     display: flex;
@@ -19,13 +61,12 @@ img{
     padding: 2rem 1rem;
 }
 
-nav{
-    display: flex;
-}
+
 
 @media screen and (max-width:650px){
     .container{
         flex-direction: column;
+        gap: 2rem;
     }
 }
 
@@ -50,8 +91,18 @@ nav{
     25px 30px 30px rgba(0,0,0,0.05),
     inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     transition: 0.5s;
+    animation: drop 1s 1 ;
 }
 
+@keyframes drop {
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 .container .drops:nth-child(1){  
     border-radius: 56% 44% 60% 40% / 46% 30% 70% 54%  ; 
 }
@@ -74,7 +125,6 @@ nav{
     width: 30px;
     height: 30px;
     background-color: #eff0f4;
-    background-color:  #282D35;
     border-radius: 50%;
     opacity: 0.9;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
@@ -90,7 +140,6 @@ nav{
     width: 20px;
     height: 20px;
     background-color: #eff0f4;
-    background-color:  #282D35;
     border-radius: 50%;
     opacity: 0.9;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
@@ -113,7 +162,6 @@ nav{
     width: 80px;
     height: 80px;
     background-color: #eff0f4;
-    background-color:  #282D35;
     border-radius: 50%;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
     inset -2px -5px 10px rgba(255,255,255,1),
@@ -124,4 +172,13 @@ nav{
     align-items: center;
 
 
+}
+.Dark .drops::before{
+    background-color:  #282D35;
+}
+.Dark .drops::after{
+    background-color:  #282D35;
+}
+.Dark .content h2{
+    background-color:  #282D35;
 }

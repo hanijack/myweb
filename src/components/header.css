@@ -1,28 +1,65 @@
-header{
+header {
     width: 100%;
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     height: 3.5rem;
     background-color: aqua;
     z-index: 100;
+    animation: down 1s 1;
 }
-a{
+header.Dark{
+    background-color: #21222A;
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+a {
     text-decoration: none;
 }
 
-nav{
+nav {
     display: flex;
-    max-width: 950 px;
+    max-width: 950px;
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
     gap: 1rem;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.fa-solid:hover {
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.Light .fa-sun {
+    display: none;
+}
+
+.fa-sun {
+    color: orange;
+}
+
+.Dark .fa-moon {
+    display: none;
 }

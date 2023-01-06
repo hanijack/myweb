@@ -5,19 +5,21 @@ import React from 'react';
 
 const Context = React.createContext()
 
-const ContextProvider = () => {
-    const [theme , setTheme]=React.useState(false)
+const ContextProvider = ({children}) => {
+    const [theme , setTheme]=React.useState("Light")
 
 
 
 
-    function toggleTheme(){
-        setTheme(prev => !prev)
+    function toggleTheme(T){
+        setTheme(T)
     }
 
 
   return (
-    <div>Context</div>
+    <Context.Provider value={{toggleTheme , theme}}>
+      {children}
+    </Context.Provider>
   )
 }
 
