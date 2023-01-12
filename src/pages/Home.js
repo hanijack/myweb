@@ -1,7 +1,8 @@
 import React from 'react';
 import photo from "../mypic.png";
 import Header from "../components/Header";
-import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async';
+import  Footer  from '../components/Footer'
 
 const Home = () => {
   return (
@@ -21,9 +22,9 @@ const Home = () => {
                 <h1>Mohamad Darklt</h1>
                 <p>a web developer with biomedical background</p>
               </div>
-              
-        </section>
+            </section>
         </main>
+        <Footer/>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from 'react-helmet-async'
 import Header from "../components/Header";
 import { Context } from '../components/Context';
+import  Footer  from '../components/Footer'
 
 const Services = () => {
   const {theme}=React.useContext(Context)
@@ -31,8 +32,8 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
-
   );
 };
 

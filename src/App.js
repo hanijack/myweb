@@ -33,7 +33,7 @@ const router = createBrowserRouter([
 function App() {
   const {theme}= useContext(Context)
   return (
-    <div className={theme}>
+    <div className={`${theme} app`}>
       <RouterProvider router={router} />
     </div>
   );

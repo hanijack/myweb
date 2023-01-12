@@ -1,0 +1,21 @@
+footer{
+    background-color: teal;
+}
+footer.Dark{
+    background-color: #203f4f;
+}
+.footer-links , .footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+
+footer a {
+    color: #203f4f;
+
+}
+footer.Dark a{
+    color: aquamarine;
+}

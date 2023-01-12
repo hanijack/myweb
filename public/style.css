@@ -1,24 +1,39 @@
 *{
     box-sizing: border-box;
 }
+.app{
+    padding: 3.5rem 0 0 0;
+}
 
 h1 , h2 , h3 {
     margin: 0;
+    text-align: center;
 }
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+
 .img-handler{
     display: flex;
-    width: 50%;
+    width: 100%;
     max-height: 500px;
     animation: intro 1.5s 1;
 
 }
-.intro-data{
+.intro-data ,.about-data{
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 45%;
     animation: data 1.5s 1;
 }
+
 img{
     width: 100%;
     border-radius: 2rem;
@@ -53,7 +68,7 @@ img{
 
 .container{
     display: flex;
-    max-width: 950 px;
+    max-width: 950px;
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
@@ -124,7 +139,7 @@ img{
     left: 70px;
     width: 30px;
     height: 30px;
-    background-color: #eff0f4;
+    background-color: #fff;
     border-radius: 50%;
     opacity: 0.9;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
@@ -139,7 +154,7 @@ img{
     left: 80px;
     width: 20px;
     height: 20px;
-    background-color: #eff0f4;
+    background-color: #fff;
     border-radius: 50%;
     opacity: 0.9;
     box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
@@ -181,4 +196,55 @@ img{
 }
 .Dark .content h2{
     background-color:  #282D35;
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+}
+.skill h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    
+}
+.skill{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+.skill-progress{
+    background-color: #746a6a;
+    width: 100%;
+    height: 7px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.skill-border{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(20, 143, 143);
+    animation: percent 1.5s 1 ;
+}
+.skill-percent{
+    position: absolute;
+    top: -30px;
+    right: 0;
+
+}
+@keyframes percent{
+    0%{
+        width: 0;
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
