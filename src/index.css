@@ -4,13 +4,22 @@ body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+body a{
+  color: rgba(255, 255, 255, 0.87);
+}
 .Dark {
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
-  background-color: #282d35;
-  color: #61dafb;
+  background-color: #242424;
 }
-
+.Dark a{
+  color: rgba(255, 255, 255, 0.87);
+}
+.Dark .intro-data h1{
+  color: cyan;
+}
+.Dark b{
+  color: cyan;
+}
 /* color: #203f4f; pretty cool color */
 /* color: #61DAFB;  when dark mode for text */
 /* background-color: #21222A;  when dark mode for nav  */

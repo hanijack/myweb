@@ -13,12 +13,12 @@ const About = () => {
       <Header />
       <section className="container">
         <div className="img-handler">
-          <img src={pic} alt="pic2" />
+          <img src={pic} alt="pic2" loading="eager" decoding="sync" className="pic2"/>
         </div>
         <p className="about-data">
         Seeking knowledge is an eternal process that stems from humility,
         has pleasure in contemplating the immensity of the attempt.
-          <br/><q>The moment you stop learning is the moment you start dying</q>
+          <br/><i></i><q>The moment you stop learning is the moment you start dying</q>
           <cite> <b>Albert Einstein.</b></cite>
         </p>
       </section>

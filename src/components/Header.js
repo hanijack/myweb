@@ -14,7 +14,7 @@ const Header = () => {
     <header className={theme ==="Light" ? "" : "Dark"}>
       <nav className="header-container  wide-header">
         <h2 className="slogan">
-          <NavLink to="/">MD</NavLink>
+            MD
         </h2>
         <i
           onClick={() => {

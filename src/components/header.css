@@ -4,14 +4,26 @@ header {
     top: 0;
     left: 0;
     height: 3.5rem;
-    background-color: aqua;
-    
-    z-index: 100;
+    background-color: teal;
+    z-index: 1000;
     animation: down 1s 1;
+    border-radius: 0 0 5px 5px ;
+
+}
+nav{
+    height: 100%;
 }
 header.Dark{
-    background-color: #21222A;
-    /* background-color: #203f4f; */
+    background-color: rgba(17, 17, 17, 0.885);
+    background-color: rgba(17, 17, 17);
+    color: rgba(255, 255, 255, 0.87);
+    z-index: 1000;
+    
+}
+nav a:hover , nav a.active {
+    color: cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 5px;
 }
 
 @keyframes down {
@@ -26,6 +38,7 @@ header.Dark{
 
 a {
     text-decoration: none;
+    padding: 10px 8px;
 }
 
 .wide-header {
@@ -36,8 +49,11 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.slogan{
+.slogan {
+    color: cyan;
     letter-spacing: -5px;
+    padding: 8px 10px ;
+    margin: 0;
 }
 
 .fa-solid {
@@ -78,11 +94,11 @@ a {
     top: 3rem;
     font-size: 1.6rem;
     cursor: pointer;
-    color: rgb(95, 37, 150);
+    color: rgba(255, 255, 255, 0.87);
 }
 .fa-circle-xmark:hover{
     scale: 1.1;
-    color: rgb(140, 104, 172);
+    color: rgb(170, 208, 214);
 }
 
 @media screen and (max-width:650px) {
@@ -102,6 +118,7 @@ a {
     .burger-menu{
         display: block;
         cursor: pointer;
+        font-size: 1.5rem;
     }
     .mobile-menu{
         margin: 0;
@@ -119,6 +136,6 @@ a {
     }
     
 }
-.open-menu{
+/* .open-menu{
     right: 0;
-}
+} */

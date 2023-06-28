@@ -1,8 +1,9 @@
 footer{
     background-color: teal;
+    border-radius: 5px 5px  0 0 ;
 }
 footer.Dark{
-    background-color: #203f4f;
+    background-color: rgba(17, 17, 17, 0.885)
 }
 .footer-links , .footer-social{
     display: flex;
@@ -11,11 +12,9 @@ footer.Dark{
     padding-left: 0;
 }
 
-
 footer a {
-    color: #203f4f;
-
+    color: rgba(255, 255, 255, 0.87);;
 }
 footer.Dark a{
-    color: aquamarine;
+    color: rgba(255, 255, 255, 0.87);
 }

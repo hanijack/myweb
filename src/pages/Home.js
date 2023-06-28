@@ -14,13 +14,13 @@ const Home = () => {
         <main>
             <section className='container main-container'>
               <div className='img-handler'>
-                <img src={photo} alt='personal' />
+                <img src={photo} alt='personal' decoding="async" className='img-1'/>
               </div>
               
               <div className='intro-data'>
-                <h3>Hello , I am</h3>
+                <h3>Hello , I am here </h3>
                 <h1>Mohamad Darklt</h1>
-                <p>a web developer with biomedical background</p>
+                <p>A web developer with Biomedical engineering background</p>
               </div>
             </section>
         </main>

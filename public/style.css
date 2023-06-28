@@ -1,44 +1,70 @@
-*{
+* {
     box-sizing: border-box;
 }
-.app{
+
+.app {
     padding: 3.5rem 0 0 0;
 }
 
-h1 , h2 , h3 {
+h1,
+h2,
+h3 {
     margin: 0;
     text-align: center;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     gap: 1rem;
 }
 
-
-
-.img-handler{
+.img-handler {
     display: flex;
-    width: 100%;
+    width: 80%;
     max-height: 500px;
     animation: intro 1.5s 1;
-
+    justify-content: center;
 }
-.intro-data ,.about-data{
+
+
+img {
+    width: 90%;
+    border-radius: 2rem;
+    max-height: 80%;
+}
+
+.img-1{
+    max-width: 300px;
+}
+.intro-data,
+.about-data {
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 45%;
     animation: data 1.5s 1;
 }
-
-img{
-    width: 100%;
-    border-radius: 2rem;
-    max-height: 100%;
-    object-fit: scale-down;
+.intro-data h1{
+    color: teal;
+    margin-top: 1rem;
+}
+.intro-data p {
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+.about-data {
+    line-height: 1.4;
+}
+.about-data q{
+    margin-top: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+}
+b{
+    color: teal;
+    margin-top: 0.4rem;
 }
 
 
@@ -52,6 +78,7 @@ img{
         transform: translateX(0);
     }
 }
+
 @keyframes data {
     0% {
         transform: translateX(100px);
@@ -62,11 +89,7 @@ img{
     }
 }
 
-
-
-
-
-.container{
+.container {
     display: flex;
     max-width: 950px;
     width: 80%;
@@ -76,18 +99,7 @@ img{
     padding: 2rem 1rem;
 }
 
-
-
-@media screen and (max-width:650px){
-    .container{
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-
-
-/* services  body must be background of #eff0f4*/
-.container-services{
+.container-services {
     position: relative;
     display: flex;
     justify-content: center;
@@ -97,16 +109,15 @@ img{
     gap: 40px 60px;
 }
 
-.container .drops{
+.container .drops {
     position: relative;
     width: 300px;
     height: 300px;
-    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
-    25px 35px 20px rgba(0,0,0,0.05),
-    25px 30px 30px rgba(0,0,0,0.05),
-    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
     transition: 0.5s;
-    animation: drop 1s 1 ;
+    animation: drop 1s 1;
 }
 
 @keyframes drop {
@@ -118,51 +129,54 @@ img{
         transform: scale(1);
     }
 }
-.container .drops:nth-child(1){  
-    border-radius: 56% 44% 60% 40% / 46% 30% 70% 54%  ; 
-}
-.container .drops:nth-child(2){  
-    border-radius: 32% 68% 29% 71% / 60% 53% 47% 40% ; 
-}
-.container .drops:nth-child(3){ 
-    border-radius:72% 28% 49% 51% / 26% 66% 34% 74%  ; 
+
+.container .drops:nth-child(1) {
+    border-radius: 56% 44% 60% 40% / 46% 30% 70% 54%;
 }
 
+.container .drops:nth-child(2) {
+    border-radius: 32% 68% 29% 71% / 60% 53% 47% 40%;
+}
 
-.container .drops:hover{
+.container .drops:nth-child(3) {
+    border-radius: 72% 28% 49% 51% / 26% 66% 34% 74%;
+}
+
+.container .drops:hover {
     border-radius: 50%;
 }
-.container .drops::before{
+
+.container .drops::before {
     content: "";
     position: absolute;
-    top:35px;
+    top: 35px;
     left: 70px;
     width: 30px;
     height: 30px;
     background-color: #fff;
     border-radius: 50%;
     opacity: 0.9;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
-    inset -2px -5px 10px rgba(255,255,255,1),
-    15px 15px 10px rgba(0,0,0,0.05),
-    15px 10px 15px rgba(0,0,0,0.025);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
 }
-.container .drops::after{
+
+.container .drops::after {
     content: "";
     position: absolute;
-    top:75px;
+    top: 75px;
     left: 80px;
     width: 20px;
     height: 20px;
     background-color: #fff;
     border-radius: 50%;
     opacity: 0.9;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
-    inset -2px -5px 10px rgba(255,255,255,1),
-    15px 15px 10px rgba(0,0,0,0.05),
-    15px 10px 15px rgba(0,0,0,0.025);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
 }
-.container .drops .content{
+
+.container .drops .content {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -172,79 +186,183 @@ img{
     gap: 12px;
     height: 80%;
 }
-.content h2{
+
+
+.content h2 {
     position: relative;
     width: 80px;
     height: 80px;
     background-color: #eff0f4;
     border-radius: 50%;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
-    inset -2px -5px 10px rgba(255,255,255,1),
-    15px 15px 10px rgba(0,0,0,0.05),
-    15px 10px 15px rgba(0,0,0,0.025);
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.content h2 span{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.Dark .drops::before {
+    background-color: #282d35;
+}
+
+.Dark .drops::after {
+    background-color: #282d35;
+}
+
+.Dark .content h2 {
+    background-color: #282d35;
+}
 
 
-}
-.Dark .drops::before{
-    background-color:  #282D35;
-}
-.Dark .drops::after{
-    background-color:  #282D35;
-}
-.Dark .content h2{
-    background-color:  #282D35;
-}
-.skills-container{
+.skills-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 45%;
 }
-.skill h5{
+
+.skill h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 18px;
     margin: 0;
-    
 }
-.skill{
+
+.skill {
     display: flex;
     width: 100%;
     flex-direction: column;
-
 }
-.skill-progress{
-    background-color: #746a6a;
+
+.skill-progress {
+    background-color: #b6aeae;
     width: 100%;
     height: 7px;
     border-radius: 4px;
     margin-bottom: 30px;
     position: relative;
-
 }
-.skill-border{
+
+.skill-border {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     border-radius: 4px;
     background-color: rgb(20, 143, 143);
-    animation: percent 1.5s 1 ;
+    animation: percent 1.5s 1;
 }
-.skill-percent{
+
+.skill-percent {
     position: absolute;
     top: -30px;
     right: 0;
-
 }
-@keyframes percent{
-    0%{
+
+@keyframes percent {
+    0% {
         width: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 18px;
+    padding: 6px 4px;
+    border: 1px solid #607d8b;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+}
+
+form button {
+    padding: 8px 12px;
+    background-color: teal;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+}
+
+.contact-container {
+    row-gap: 3rem;
+    padding: 4rem 2rem;
+align-items: center;
+}
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-info h3{
+    margin-bottom: 0.6rem;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    color: #607d8b;
+    margin-bottom: 0.75rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border-radius: 6px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 200px;
+
+}
+
+
+
+@media screen and (max-width: 830px){
+    .pic2{
+        height: 100%;
+        width: 90%;
+    }
+    .about-data{
+        line-height: 1.1;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+    .about-data{
+        line-height: 1.5;
     }
 }
