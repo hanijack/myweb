@@ -18,7 +18,7 @@ const Home = () => {
               </div>
               
               <div className='intro-data'>
-                <h3>Hello , I am here </h3>
+                <h3>Hello , I am   </h3>
                 <h1>Mohamad Darklt</h1>
                 <p>A web developer with Biomedical engineering background</p>
               </div>

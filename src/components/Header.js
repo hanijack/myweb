@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import "./header.css";
 import { Context } from "../components/Context";
 
@@ -14,7 +14,7 @@ const Header = () => {
     <header className={theme ==="Light" ? "" : "Dark"}>
       <nav className="header-container  wide-header">
         <h2 className="slogan">
-            MD
+            <Link to="/">MD</Link>
         </h2>
         <i
           onClick={() => {

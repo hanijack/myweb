@@ -91,12 +91,12 @@ b{
 
 .container {
     display: flex;
-    max-width: 950px;
+    /* max-width: 950px; */
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2.2rem 1rem;
 }
 
 .container-services {
@@ -297,6 +297,10 @@ form button {
     border: none;
     color: white;
     margin-top: 2rem;
+}
+form button:hover{
+    cursor: pointer;
+    color: rgb(144, 230, 230);
 }
 
 .contact-container {
